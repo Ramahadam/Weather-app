@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+    <script src="./js/custom.js" defer></script>
+    <title>Webpack App</title>
+  </head>
+  <body>
+    <!-- <div class="flex justify-center items-center h-screen" id="autoLoader">
+      <span class="animate-pulse bg-cyan-300 rounded-full h-20 w-20"></span>
+    </div> -->
+    <main class="app">
+      <nav>
+        <div
+          class="container md:p-10 md:max-w-6xl mx-auto flex flex-col space-y-10 md:space-y-0 md:flex-row items-center justify-between"
+        >
+          <img src="./images/logo.png" alt="logo" />
+          <div class="search-container">
+            <form
+              action=""
+              id="form"
+              class="flex items-center justify-between bg-white rounded-3xl py-1 px-6 shadow-lg shadow-gray-200 min-h-fit"
+            >
+              <input
+                type="text"
+                placeholder="Search for city weather"
+                class="bg-transparent text-black placeholder:text-gray-400 focus:outline-none placeholder:text-sm"
+                id="inputUser"
+              />
+              <a href="#" id="searchButton"
+                ><img src="./images/search.png" alt=""
+              /></a>
+            </form>
+            <p class="text-center text-sm text-red-600" id="error-message "></p>
+          </div>
+          <div class="flex flex-col text-center md:text-left">
+            <span class="font-bold text-sm">Good morning</span>
+            <span class="font-normal text-xs">Today 17th Jul</span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="mt-10" id="hero">
+        <div class="hero__container">
+          <!--Card-->
+          <div class="hero__card group bg-white shadow-md">
+            <div class="flex items-center justify-between space-x-8">
+              <div class="flex flex-col space-y-8 font-semibold">
+                <p class="text-xl md:text-3xl font-bold md:font-semibold">
+                  Dubai, UAE
+                </p>
+                <div class="relative">
+                  <p class="text-2xl md:text-4xl font-semibold">33c</p>
+                  <p class="absolute text-xl -top-5 right-20 md:right-32">o</p>
+                  <p class="text-sm text-gray-400 mt-2">Almost sunny</p>
+                </div>
+              </div>
+              <img
+                src="./images/sung-big.png"
+                alt="sunny"
+                class="w-20 md:w-32 group-hover:-translate-y-20 transition-all duration-200"
+              />
+            </div>
+            <!--card footer-->
+            <div class="hero__card--footer">
+              <div
+                class="bg-yankeeBlue text-center text-white p-4 space-y-2 rounded-xl"
+              >
+                <p class="text-sm font-medium">Humidity</p>
+                <p class="text-md font-bold">87%</p>
+              </div>
+              <div
+                class="bg-champagnePink text-center text-black p-4 space-y-2 rounded-xl"
+              >
+                <p class="text-sm font-medium">Pressure</p>
+                <p class="text-md font-bold">800mb</p>
+              </div>
+              <div
+                class="bg-powderBlue text-center text-black p-4 space-y-2 rounded-xl"
+              >
+                <p class="text-sm font-medium">Visibility</p>
+                <p class="text-md font-bold">4.3Km</p>
+              </div>
+            </div>
+          </div>
+          <!------>
+          <!--Card-->
+          <div class="hero__card bg-alabaster">
+            <div class="flex items-center justify-between space-x-8">
+              <div class="flex flex-col space-y-8 font-semibold">
+                <p class="text-xl md:text-3xl font-bold md:font-semibold">
+                  Air Quality
+                </p>
+                <div class="relative">
+                  <p class="text-2xl md:text-4xl font-semibold">390</p>
+
+                  <p class="text-sm text-gray-400 mt-2">West Wid</p>
+                </div>
+              </div>
+              <img
+                src="./images/windy.png"
+                alt="sunny"
+                class="w-20 md:w-32 group-hover:animate-pulse transition-all duration-300"
+              />
+            </div>
+            <!--card footer-->
+            <div class="hero__card--footer">
+              <div
+                class="bg-diamond text-center text-black p-4 space-y-2 rounded-xl"
+              >
+                <p class="text-sm font-medium">Wind</p>
+                <p class="text-md font-bold">7Km</p>
+              </div>
+              <div
+                class="bg-keyLime text-center text-black p-4 space-y-2 rounded-xl"
+              >
+                <p class="text-sm font-medium">Qality</p>
+                <p class="text-md font-bold">Good</p>
+              </div>
+              <div
+                class="bg-princetonOrange text-center text-black p-4 space-y-2 rounded-xl"
+              >
+                <p class="text-sm font-medium">Population</p>
+                <p class="text-md font-bold">Bad</p>
+              </div>
+            </div>
+          </div>
+          <!------>
+        </div>
+      </section>
+
+      <section id="nextWeek" class="week">
+        <h2>Next Week</h2>
+
+        <div class="week_container">
+          <!--First -->
+          <div class="week__card">
+            <p>Sat</p>
+            <img src="./images/sunnysmall.png" alt="sun image" />
+            <div class="relative">
+              <p>19</p>
+              <p class="absolute text-sm -top-3 left-3">o</p>
+            </div>
+          </div>
+          <!--Second-->
+          <div class="week__card">
+            <p>Sun</p>
+            <img src="./images/almostsunny.png" alt="sun image" />
+            <div class="relative">
+              <p>32</p>
+              <p class="absolute text-sm -top-3 left-3">o</p>
+            </div>
+          </div>
+          <!--Third -->
+          <div class="week__card">
+            <p>Mon</p>
+            <img src="./images/cloudy.png" alt="sun image" />
+            <div class="relative">
+              <p>25</p>
+              <p class="absolute text-sm -top-3 left-3">o</p>
+            </div>
+          </div>
+          <!--Fourth -->
+          <div class="week__card">
+            <p>Tued</p>
+            <img src="./images/rainy.png" alt="sun image" />
+            <div class="relative">
+              <p>45</p>
+              <p class="absolute text-sm -top-3 left-3">o</p>
+            </div>
+          </div>
+          <!--Fifth -->
+          <div class="week__card">
+            <p>Wed</p>
+            <img src="./images/windysmall.png" alt="sun image" />
+            <div class="relative">
+              <p>27</p>
+              <p class="absolute text-sm -top-3 left-3">o</p>
+            </div>
+          </div>
+          <!--Six -->
+          <div class="week__card">
+            <p>Thur</p>
+            <img src="./images/clearweather.png" alt="sun image" />
+            <div class="relative">
+              <p>18</p>
+              <p class="absolute text-sm -top-3 left-3">o</p>
+            </div>
+          </div>
+          <!--Seventh -->
+          <div class="week__card">
+            <p>Fri</p>
+            <img src="./images/veryclear.png" alt="sun image" />
+            <div class="relative">
+              <p>43</p>
+              <p class="absolute text-sm -top-3 left-3">o</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cities" class="cities">
+        <h2>Other cities</h2>
+        <!--Cities container-->
+        <div class="cities__container">
+          <!--City 1-->
+          <div class="cities__card">
+            <div class="mt-4 self-start mr-8 md:mr-0 md:self-auto">
+              <p class="text-lg font-semibold md:text-2xl">Sharjah</p>
+              <p class="text-sm">Sunny day</p>
+            </div>
+            <div class="text-center mx-auto">
+              <img src="./images/sunnysmall.png" alt="illusration for sun" />
+
+              <p class="relative mt-4">
+                <span class="text-md font-semibold">33c</span>
+                <span class="text-sm absolute -top-3 right-6">o</span>
+              </p>
+            </div>
+          </div>
+          <!--City 2-->
+          <div class="cities__card">
+            <div class="mt-4 self-start mr-8 md:mr-0 md:self-auto">
+              <p class="text-lg font-semibold md:text-2xl">Ajman</p>
+              <p class="text-sm">Sunny day</p>
+            </div>
+            <div class="text-center mx-auto">
+              <img src="./images/rainy.png" alt="illusration for sun" />
+              <p class="relative mt-4">
+                <span class="text-md font-semibold">33c</span>
+                <span class="text-sm absolute -top-3 right-6">o</span>
+              </p>
+            </div>
+          </div>
+          <!--City 3-->
+          <div class="cities__card">
+            <div class="mt-4 self-start mr-8 md:mr-0 md:self-auto">
+              <p class="text-lg font-semibold md:text-2xl">Abu Dhabi</p>
+              <p class="text-sm">Sunny day</p>
+            </div>
+            <div class="text-center mx-auto">
+              <img src="./images/cloudy.png" alt="illusration for sun" />
+              <p class="relative mt-4">
+                <span class="text-md font-semibold">33c</span>
+                <span class="text-sm absolute -top-3 right-6">o</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="bundle.js"></script>
+  </body>
+</html>
