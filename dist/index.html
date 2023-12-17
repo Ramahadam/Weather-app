@@ -15,44 +15,42 @@
     <title>Webpack App</title>
   </head>
   <body>
-    <!-- <div class="flex justify-center items-center h-screen" id="autoLoader">
-      <span class="animate-pulse bg-cyan-300 rounded-full h-20 w-20"></span>
-    </div> -->
-    <main class="app">
-      <nav>
-        <div
-          class="container md:p-10 md:max-w-6xl mx-auto flex flex-col space-y-10 md:space-y-0 md:flex-row items-center justify-between"
-        >
-          <img src="./images/logo.png" alt="logo" />
-          <div class="search-container">
-            <form
-              action=""
-              id="form"
-              class="flex items-center justify-between bg-white rounded-3xl py-1 px-6 shadow-lg shadow-gray-200 min-h-fit"
-            >
-              <input
-                type="text"
-                placeholder="Search for city weather"
-                class="bg-transparent text-black placeholder:text-gray-400 focus:outline-none placeholder:text-sm"
-                id="inputUser"
-              />
-              <a href="#" id="searchButton"
-                ><img src="./images/search.png" alt=""
-              /></a>
-            </form>
-            <p class="text-center text-sm text-red-600" id="error-message "></p>
-          </div>
-          <div class="flex flex-col text-center md:text-left">
-            <span class="font-bold text-sm">Good morning</span>
-            <span class="font-normal text-xs">Today 17th Jul</span>
-          </div>
+    <nav>
+      <div
+        class="container md:p-10 md:max-w-6xl mx-auto flex flex-col space-y-10 md:space-y-0 md:flex-row items-center justify-between"
+      >
+        <img src="./images/logo.png" alt="logo" />
+        <div class="search-container">
+          <form
+            action=""
+            id="form"
+            class="flex items-center justify-between bg-white rounded-3xl py-1 px-6 shadow-lg shadow-gray-200 min-h-fit"
+          >
+            <input
+              type="text"
+              placeholder="Search for city weather"
+              class="bg-transparent text-black placeholder:text-gray-400 focus:outline-none placeholder:text-sm"
+              id="inputUser"
+            />
+            <a href="#" id="searchButton"
+              ><img src="./images/search.png" alt=""
+            /></a>
+          </form>
+          <p class="text-center text-sm text-red-600" id="error-message "></p>
         </div>
-      </nav>
+        <div class="flex flex-col text-center md:text-left">
+          <span class="font-bold text-sm">Good morning</span>
+          <span class="font-normal text-xs">Today 17th Jul</span>
+        </div>
+      </div>
+    </nav>
 
+    <div class="error"></div>
+    <main class="app hidden">
       <section class="mt-10" id="hero">
         <div class="hero__container">
           <!--Card-->
-          <div class="hero__card group bg-white shadow-md">
+          <!-- <div class="hero__card group bg-white shadow-md">
             <div class="flex items-center justify-between space-x-8">
               <div class="flex flex-col space-y-8 font-semibold">
                 <p class="text-xl md:text-3xl font-bold md:font-semibold">
@@ -70,7 +68,7 @@
                 class="w-20 md:w-32 group-hover:-translate-y-20 transition-all duration-200"
               />
             </div>
-            <!--card footer-->
+            !--card footer--
             <div class="hero__card--footer">
               <div
                 class="bg-yankeeBlue text-center text-white p-4 space-y-2 rounded-xl"
@@ -92,8 +90,8 @@
               </div>
             </div>
           </div>
-          <!------>
-          <!--Card-->
+          !------
+          !--Card--
           <div class="hero__card bg-alabaster">
             <div class="flex items-center justify-between space-x-8">
               <div class="flex flex-col space-y-8 font-semibold">
@@ -112,7 +110,7 @@
                 class="w-20 md:w-32 group-hover:animate-pulse transition-all duration-300"
               />
             </div>
-            <!--card footer-->
+            !--card footer--
             <div class="hero__card--footer">
               <div
                 class="bg-diamond text-center text-black p-4 space-y-2 rounded-xl"
@@ -133,16 +131,16 @@
                 <p class="text-md font-bold">Bad</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <!------>
         </div>
       </section>
 
-      <section id="nextWeek" class="week">
+      <!-- <section id="nextWeek" class="week">
         <h2>Next Week</h2>
 
         <div class="week_container">
-          <!--First -->
+          !--First --
           <div class="week__card">
             <p>Sat</p>
             <img src="./images/sunnysmall.png" alt="sun image" />
@@ -151,7 +149,7 @@
               <p class="absolute text-sm -top-3 left-3">o</p>
             </div>
           </div>
-          <!--Second-->
+          !--Second--
           <div class="week__card">
             <p>Sun</p>
             <img src="./images/almostsunny.png" alt="sun image" />
@@ -160,7 +158,7 @@
               <p class="absolute text-sm -top-3 left-3">o</p>
             </div>
           </div>
-          <!--Third -->
+          !--Third --
           <div class="week__card">
             <p>Mon</p>
             <img src="./images/cloudy.png" alt="sun image" />
@@ -169,7 +167,7 @@
               <p class="absolute text-sm -top-3 left-3">o</p>
             </div>
           </div>
-          <!--Fourth -->
+          !--Fourth --
           <div class="week__card">
             <p>Tued</p>
             <img src="./images/rainy.png" alt="sun image" />
@@ -178,7 +176,7 @@
               <p class="absolute text-sm -top-3 left-3">o</p>
             </div>
           </div>
-          <!--Fifth -->
+          --Fifth --
           <div class="week__card">
             <p>Wed</p>
             <img src="./images/windysmall.png" alt="sun image" />
@@ -187,7 +185,7 @@
               <p class="absolute text-sm -top-3 left-3">o</p>
             </div>
           </div>
-          <!--Six -->
+          --Six --
           <div class="week__card">
             <p>Thur</p>
             <img src="./images/clearweather.png" alt="sun image" />
@@ -196,7 +194,7 @@
               <p class="absolute text-sm -top-3 left-3">o</p>
             </div>
           </div>
-          <!--Seventh -->
+          --Seventh --
           <div class="week__card">
             <p>Fri</p>
             <img src="./images/veryclear.png" alt="sun image" />
@@ -210,9 +208,9 @@
 
       <section id="cities" class="cities">
         <h2>Other cities</h2>
-        <!--Cities container-->
+        --Cities container--
         <div class="cities__container">
-          <!--City 1-->
+          --City 1--
           <div class="cities__card">
             <div class="mt-4 self-start mr-8 md:mr-0 md:self-auto">
               <p class="text-lg font-semibold md:text-2xl">Sharjah</p>
@@ -227,7 +225,7 @@
               </p>
             </div>
           </div>
-          <!--City 2-->
+          --City 2--
           <div class="cities__card">
             <div class="mt-4 self-start mr-8 md:mr-0 md:self-auto">
               <p class="text-lg font-semibold md:text-2xl">Ajman</p>
@@ -241,7 +239,7 @@
               </p>
             </div>
           </div>
-          <!--City 3-->
+          --City 3--
           <div class="cities__card">
             <div class="mt-4 self-start mr-8 md:mr-0 md:self-auto">
               <p class="text-lg font-semibold md:text-2xl">Abu Dhabi</p>
@@ -256,7 +254,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <script src="bundle.js"></script>
   </body>

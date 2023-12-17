@@ -16,8 +16,12 @@ section {
   @apply container mt-32 md:mt-0 md:p-10 md:max-w-6xl mx-auto;
 }
 
+.error-message {
+  @apply text-center bg-red-300 w-2/3 md:w-1/2 m-auto rounded-md p-2 font-semibold mt-10 md:mt-2 text-sm md:text-lg;
+}
+
 .hero__container {
-  @apply flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10;
+  @apply flex flex-col justify-center items-center md:flex-row space-y-8 md:space-y-0 md:space-x-10;
 }
 
 .hero__card {
